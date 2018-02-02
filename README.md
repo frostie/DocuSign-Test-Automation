@@ -3,7 +3,7 @@ An automated test application used to login to DocuSign and perform various user
 
 # Test Scripts
 
-1.0: Login Test  
+1.0: Login Test    
   1.1: Open Safari browser.  
   1.2: Maximize screen.  
   1.3: Go to: http:www.docusign.com.  
