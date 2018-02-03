@@ -6,6 +6,9 @@ import org.openqa.selenium.safari.SafariDriver;
 public class Login {
 
 	public static void main(String[] args) throws InterruptedException {
+		
+		// Opens Safari browser, goes to DocuSign.com, logs in.
+		
 		WebDriver driver = new SafariDriver();
 		driver.get("http://www.docusign.com");
         driver.manage().window().maximize();
@@ -24,14 +27,15 @@ public class Login {
 		WebElement loginBtn = driver.findElement(By.xpath("/html/body/div/div/div/main/section/div[1]/div/form/div[4]/button/div"));
 		loginBtn.click();
 		
-		// At this point, test app is logged into the account.
+		// Clicks on profile button, logs out.
+		
 		Thread.sleep(15000);
 		WebElement profileBtn = driver.findElement(By.xpath("//*[@id=\"ng-app\"]/body/div[1]/div/div[1]/nav-header/div/div/ng-transclude/div[1]/div[4]/div[2]/button"));
 		profileBtn.click();
 		WebElement logoutBtn = driver.findElement(By.xpath("//*[@id=\"menuAccountNav\"]/ul/li[4]/a"));
 		logoutBtn.click();
-	
-		//driver.quit();
+		Thread.sleep(5000);
+		driver.quit();
 	}
 
 }
