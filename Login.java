@@ -11,8 +11,8 @@ public class Login {
 		
 		WebDriver driver = new SafariDriver();
 		driver.get("http://www.docusign.com");
-        driver.manage().window().maximize();
-        WebElement link = driver.findElement(By.xpath("//*[@id=\"us-login-button\"]/div"));
+        	driver.manage().window().maximize();
+        	WebElement link = driver.findElement(By.xpath("//*[@id=\"us-login-button\"]/div"));
 		link.click();
 		Thread.sleep(5000);
 		WebElement usernameField = driver.findElement(By.id("username"));
