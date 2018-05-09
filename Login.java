@@ -17,13 +17,13 @@ public class Login {
 		Thread.sleep(5000);
 		WebElement usernameField = driver.findElement(By.id("username"));
 		usernameField.click();
-		usernameField.sendKeys("pmarcoccia@qualityandcompliance.com");
+		usernameField.sendKeys("******");
 		WebElement continueBtn = driver.findElement(By.xpath("/html/body/div/div/div/main/section/div[1]/div/form/div[3]/button"));
 		continueBtn.click();
 		Thread.sleep(5000);
 		WebElement passwordField = driver.findElement(By.xpath("//*[@id=\"password\"]"));
 		passwordField.click();
-		passwordField.sendKeys("2testDS@@");
+		passwordField.sendKeys("******");
 		WebElement loginBtn = driver.findElement(By.xpath("/html/body/div/div/div/main/section/div[1]/div/form/div[4]/button/div"));
 		loginBtn.click();
 		
