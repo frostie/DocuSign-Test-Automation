@@ -14,3 +14,6 @@ An automated test application used to login to DocuSign and perform various user
     1.9: Click account icon at top-right of screen.  
     1.10: Click Log Out.
     1.11: Exit browser.
+
+# Next Actions
+- Create same tests for Chrome and IE browsers
